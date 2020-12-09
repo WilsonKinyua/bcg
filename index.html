@@ -14,54 +14,35 @@
   <link href="css/plugins.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300&display=swap" rel="stylesheet"> -->
 </head>
 
 <style>
   body {
-    font-family: henderson-bcg-sans,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: henderson-bcg-sans, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  }
+
+  nav li a:hover {
+    color: rgb(0, 47, 255) !important;
+    text-decoration: underline !important;
+  }
+   .menu-active {
+    text-decoration: underline !important;
+    color: rgb(0, 47, 255) !important;
+    /* background-color: red; */
   }
 </style>
 
 <body>
 
   <div class="body-inner">
-
-    <!-- <div id="topbar" class="d-none d-xl-block d-lg-block topbar-fullwidth">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-          </div>
-          <div class="col-md-6 d-none d-sm-block">
-            <div class="social-icons social-icons-colored-hover">
-              <ul>
-                <li class="social-facebook"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li class="social-google"><a href="#"><i class="fa fa-google-plus-g"></i></a></li>
-                <li class="social-pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                <li class="social-vimeo"><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                <li class="social-linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li class="social-dribbble"><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                <li class="social-youtube"><a href="#"><i class="fa fa-youtube"></i></a></li>
-                <li class="social-rss"><a href="#"><i class="fa fa-rss"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-
     <header id="header" data-fullwidth="true">
       <div class="header-inner">
         <div class="container">
 
           <div id="logo">
             <a href="index.html">
-              <img src="images/logonew.png" class="logo-default">
-              <!-- <img src="images/logo-sticky.png" class="logo-sticky"> -->
-              <!-- <h6>Newpoint Strategies</h6> -->
+              <img src="images/logon.png" class="logo-default">
+
             </a>
           </div>
 
@@ -77,16 +58,14 @@
           </div>
 
 
-          <div id="mainMenu">
+          <div id="mainMenu" class="menu-center">
             <div class="container">
-              <nav>
+              <nav class="">
                 <ul class="nav-menu">
-                  <li class="menu-active"><a style="text-decoration: underline; color: green !important;"
-                      href="#slider">Home</a></li>
-                  <li><a style="text-decoration: underline; color: green !important;" href="#about">Who We are</a></li>
-                  <li><a style="text-decoration: underline; color: green !important;"
-                      href="#page-content">Specialization</a></li>
-                  <li><a style="text-decoration: underline; color: green !important;" href="#contact">Contact</a></li>
+                  <li class=""><a href="#slider">Home</a></li>
+                  <li><a href="#about">Who We are</a></li>
+                  <li><a href="#page-content">Specialization</a></li>
+                  <li><a href="#contact">Contact</a></li>
                 </ul>
               </nav>
             </div>
@@ -185,18 +164,19 @@
         </div>
       </div>
     </section>
-    <section class="content background-grey" id="page-content">
+
+    <section class="content background-grey mt-5" id="page-content">
       <div class="container">
         <div class="heading-text heading-section">
           <h2>Our areas of specialization.</h2>
         </div>
         <div id="blog" class="grid-layout post-3-columns m-b-30" data-item="post-item">
 
-          <div class="post-item border" >
+          <div class="post-item border">
             <div class="post-item-wrap">
               <div class="post-image">
                 <a href="#modalOne" data-lightbox="inline">
-                  <img class="img-responsive" alt="" 
+                  <img class="img-responsive" alt=""
                     src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
                 </a>
               </div>
@@ -225,11 +205,11 @@
             </div>
           </div>
 
-          <div class="post-item border" >
+          <div class="post-item border">
             <div class="post-item-wrap">
               <div class="post-image">
                 <a href="#modalTwo" data-lightbox="inline">
-                  <img class="img-responsive" alt="" 
+                  <img class="img-responsive" alt=""
                     src="https://images.pexels.com/photos/5668836/pexels-photo-5668836.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
                 </a>
               </div>
@@ -302,7 +282,8 @@
                   <p class="m-b-20">
                     Whether it’s a problem below the radar, an emerging crisis – or a full-blown eruption – Newpoint’s
                     team stands ready to put out the proverbial fire or prevent a relatively quiet issue from becoming
-                    incendiary. All the kinds of crisis/issues that make the news - whether it is a <strong><i>data breach
+                    incendiary. All the kinds of crisis/issues that make the news - whether it is a <strong><i>data
+                        breach
                         or
                         environmental contamination</i></strong> – we’ve handled them all.
                   </p>
@@ -314,83 +295,10 @@
         </div>
       </div>
     </section>
-    <!-- <section id="page-content">
-      <div class="container">
-        <div class="grid-system-demo-live">
-          <div class="row">
-            <div class="col-lg-12 p-t-80 p-b-20">
-              <div class="heading-text heading-section">
-                <h2>Our areas of specialization.</h2>
-              </div>
-            </div>
-            <div class="row" style="padding-top:4%;">
-              <div class="col-lg-12" data-animate="fadeInUp" data-animate-delay="1200">
-                <h4>Media Relations</h4>
-                <p>In today’s media environment, it is imperative for organizations to master
-                  compelling storytelling and engage with their publics via traditional,
-                  online and hybrid channels. Newpoint’s media relations expertise includes
-                  conducting media audits, providing strategic PR counsel, developing messaging
-                  and brand positioning, pitching media interviews, securing speaking engagements,
-                  monitoring and analyzing news, organizing media briefings, and providing media
-                  relations skills training.
-                </p>
-                <p>
-                  Our media relations experts know how to build strategies that will navigate the media
-                  sector and build newsworthy stories that resonate with your target audience. Learn
-                  more about how Newpoint Strategies can work as your media relations partner.
-                </p>
-              </div>
-              <div class="col-lg-12" data-animate="fadeInUp" data-animate-delay="1500">
-                <h4>Issues Management </h4>
-                <p>What if a natural disaster impacts your operations? How do you respond if an
-                  issue threatens the financial viability of your company? What would you do if
-                  regulators launch an investigation into your business? If your company’s
-                  reputation is under attack, how will you defend it?
-                </p>
-                <p>
-                  High-stakes scenarios like these impact businesses every day. Are you prepared?
-                </p>
-                <p>
-                  Whether it’s a problem below the radar, an emerging crisis – or a full-blown eruption – Newpoint’s
-                  team stands ready to put out the proverbial fire or prevent a relatively quiet issue from becoming
-                  incendiary. All the kinds of crisis/issues that make the news - whether it is a <strong><i>data breach
-                      or
-                      environmental contamination</i></strong> – we’ve handled them all.
-                </p>
-              </div>
-              <div class="col-lg-12" data-animate="fadeInUp" data-animate-delay="1800">
-                <h4>Brand Reputation Management</h4>
-                <p>
-                  When it comes to reputation, perception is reality. To effectively promote,
-                  protect, and preserve brand and reputation, it must be managed programmatically,
-                  with ownership and accountability residing in the C-suite. Newpoint helps you discover,
-                  interpret, and prepare for risks that can impact your business or industry and damage your
-                  reputation. We help clients lead, navigate, and disrupt to turn potential threats into
-                  opportunities.
-                </p>
-                <p>
-                  Brand and reputation. It’s what your company is built on. It’s what your customers base their
-                  loyalty on. It’s the culmination of everything your company does, from product quality
-                  to employee behavior and everything in between. It takes a lifetime to build, but only
-                  an instant to be torn apart. So what can you do about it?
-                </p>
-                <p>
-                  The most resilient brands embrace uncertainty. They recognize that purposeful responses go
-                  a long way in helping to bounce back after brand events. They understand that preparation
-                  gives leaders the confidence that their program can weather a storm. And they keep the
-                  brand out in front of everything their company does.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <footer id="footer">
       <div class="footer-content">
         <div class="container">
-
         </div>
       </div>
       <div class="copyright-content">
